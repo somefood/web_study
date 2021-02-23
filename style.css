@@ -1,0 +1,13 @@
+/* default link color is blue */
+.parent a {
+  color: blue;
+}
+
+/* prev siblings should be red */
+.parent:hover a {
+  color: red;
+}
+.parent a:hover,
+.parent a:hover ~ a {
+  color: blue;
+}
